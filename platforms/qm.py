@@ -24,9 +24,9 @@ def create(runcard_path=RUNCARD):
     channels["readout"].port = controller[(("con3", 9), ("con3", 10))]
     channels["feedback"].port = controller[(("con3", 1), ("con3", 2))]
     channels["drive"].port = controller[(("con3", 3), ("con3", 4))]
-    
+
     # add gain to feedback channels
-    #channels["feedback"].gain = 15
+    # channels["feedback"].gain = 15
 
     # Configure local oscillator's frequency and power
     lo_readout.frequency = 5_000_000_000
