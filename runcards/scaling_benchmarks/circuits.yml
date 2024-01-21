@@ -1,0 +1,38 @@
+platform: iqm5q
+
+qubits: [0]
+
+actions:
+
+- id: standard rb bootstrap 1
+  priority: 0
+  main: standard rb bootstrap 10
+  operation: standard_rb
+  parameters:
+    depths: [10]
+    n_bootstrap: 10
+    niter: 1
+    nshots: 128
+    seed: 420
+
+- id: standard rb bootstrap 10
+  priority: 0
+  main: standard rb bootstrap 100
+  operation: standard_rb
+  parameters:
+    depths: [10]
+    n_bootstrap: 10
+    niter: 10
+    nshots: 128
+    seed: 420
+
+- id: standard rb bootstrap 100
+  priority: 0
+  operation: standard_rb
+  parameters:
+    depths: [10]
+    n_bootstrap: 10
+    niter: 100
+    nshots: 128
+    seed: 420
+  

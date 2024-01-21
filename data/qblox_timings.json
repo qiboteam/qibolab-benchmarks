@@ -1,0 +1,48 @@
+{
+  "date": "executing one routine at a time",
+  "resonator spectroscopy high power": {
+    "acquisition": 1.9133689403533936,
+    "fit": 0.014113903045654297,
+    "tot": 1.928255558013916
+  },
+  "resonator spectroscopy low power": {
+    "acquisition": 4.946992635726929,
+    "fit": 0.012376785278320312,
+    "tot": 4.960132122039795
+  },
+  "qubit spectroscopy": {
+    "acquisition": 18.078415632247925,
+    "fit": 0.012715816497802734,
+    "tot": 18.09188938140869
+  },
+  "rabi amplitude": {
+    "acquisition": 94.19296360015869,
+    "fit": 0.0015025138854980469,
+    "tot": 94.19473791122437
+  },
+  "ramsey detuned": {
+    "acquisition": 70.9071626663208,
+    "fit": 0.01544642448425293,
+    "tot": 70.92335844039917
+  },
+  "t1": {
+    "acquisition": 95.59595966339111,
+    "fit": 0.004227638244628906,
+    "tot": 95.6009635925293
+  },
+  "ramsey": {
+    "acquisition": 47.333542585372925,
+    "fit": 0.02273416519165039,
+    "tot": 47.35704302787781
+  },
+  "single shot classification": {
+    "acquisition": 5.325732231140137,
+    "fit": 13.034634828567505,
+    "tot": 18.361120462417603
+  },
+  "standard rb": {
+    "acquisition": 394.90686416625977,
+    "fit": 0.1696634292602539,
+    "tot": 395.0773091316223
+  }
+}

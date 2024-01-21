@@ -1,0 +1,15 @@
+{
+  "date": "2023-07-18 13:24:56.907748",
+  "resonator spectroscopy 1": {
+    "acquisition": 0.007
+  },
+  "resonator spectroscopy 10": {
+    "acquisition": 0.07
+  },
+  "resonator spectroscopy 100": {
+    "acquisition": 0.7
+  },
+  "resonator spectroscopy 1000": {
+    "acquisition": 7.0
+  }
+}

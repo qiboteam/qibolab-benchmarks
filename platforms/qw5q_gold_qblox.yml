@@ -1,0 +1,73 @@
+nqubits: 5
+description: QuantWare 5-qubit device at XLD fridge.
+settings: {nshots: 4096, sampling_rate: 1000000000, relaxation_time: 300000}
+qubits: [0, 1, 2, 3, 4, 5]
+topology:
+- [0, 2]
+- [1, 2]
+- [2, 3]
+- [2, 4]
+resonator_type: 2D
+native_gates:
+    single_qubit:
+        0:
+            RX: {duration: 40, amplitude: 0.5028, frequency: 5050296323, shape: Gaussian(5),
+                type: qd, start: 0, phase: 0}
+            MZ: {duration: 2000, amplitude: 0.1, frequency: 7212299307, shape: Rectangular(),
+                type: ro, start: 0, phase: 0}
+        1:
+            RX: {duration: 40, amplitude: 0.5078, frequency: 4852369360, shape: Gaussian(5),
+                type: qd}
+            MZ: {duration: 2000, amplitude: 0.2, frequency: 7452990931, shape: Rectangular(),
+                type: ro}
+        2:
+            RX: {duration: 40, amplitude: 0.5016, frequency: 5795873007, shape: Gaussian(5),
+                type: qd}
+            MZ: {duration: 2000, amplitude: 0.25, frequency: 7655083068, shape: Rectangular(),
+                type: ro}
+        3:
+            RX: {duration: 40, amplitude: 0.5026, frequency: 6760958096, shape: Gaussian(5),
+                type: qd}
+            MZ: {duration: 2000, amplitude: 0.2, frequency: 7803441221, shape: Rectangular(),
+                type: ro}
+        4:
+            RX: {duration: 40, amplitude: 0.5172, frequency: 6591160736, shape: Gaussian(5),
+                type: qd}
+            MZ: {duration: 2000, amplitude: 0.4, frequency: 8058947261, shape: Rectangular(),
+                type: ro}
+        5:
+            RX: {duration: 40, amplitude: 0.5, frequency: 4700000000, shape: Gaussian(5),
+                type: qd}
+            MZ: {duration: 2000, amplitude: 0.2, frequency: 7118627658, shape: Rectangular(),
+                type: ro}
+    two_qubit:
+        0-2:
+            CZ:
+            - {duration: 40, amplitude: 0.142, shape: 'Exponential(12, 5000, 0.1)',
+                qubit: 2, relative_start: 0, type: qf}
+        1-2:
+            CZ:
+            - {duration: 32, amplitude: 0.175, shape: 'Exponential(2, 2700, 0.1)',
+                qubit: 2, relative_start: 0, type: qf}
+        3-2:
+            CZ:
+            - {duration: 32, amplitude: 0.6025, shape: 'Exponential(12, 5000, 0.1)',
+                qubit: 3, relative_start: 0, type: qf}
+        4-2:
+            CZ:
+            - {duration: 40, amplitude: -0.1355, shape: 'Exponential(10, 3000, 0.05)',
+                qubit: 4, relative_start: 0, type: qf}
+characterization:
+    single_qubit:
+        0: {readout_frequency: 7212299307, drive_frequency: 5050296323, anharmonicity: 291463266,
+            T1: 5857, T2: 0, sweetspot: 0.5525, iq_angle: 99.758, threshold: 0.003933}
+        1: {readout_frequency: 7452990931, drive_frequency: 4852369360, anharmonicity: 292584018,
+            T1: 1253, T2: 0, sweetspot: 0.2226, iq_angle: 146.297, threshold: 0.003488}
+        2: {readout_frequency: 7655083068, drive_frequency: 5795873007, anharmonicity: 276187576,
+            T1: 4563, T2: 0, sweetspot: -0.3785, iq_angle: 97.821, threshold: 0.002904}
+        3: {readout_frequency: 7803441221, drive_frequency: 6760958096, anharmonicity: 262310994,
+            T1: 4232, T2: 0, sweetspot: -0.8903, iq_angle: 91.209, threshold: 0.004318}
+        4: {readout_frequency: 8058947261, drive_frequency: 6591160736, anharmonicity: 261390626,
+            T1: 492, T2: 0, sweetspot: 0.5892, iq_angle: 7.997, threshold: 0.002323}
+        5: {readout_frequency: 7118627658, drive_frequency: 4700000000, anharmonicity: 300000000,
+            T1: 0, T2: 0, sweetspot: 0, iq_angle: 0, threshold: 0.002}

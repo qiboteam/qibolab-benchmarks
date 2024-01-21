@@ -1,0 +1,15 @@
+{
+  "date": "2023-07-18 14:51:42.223410",
+  "rabi lenght 1": {
+    "acquisition": 0.007
+  },
+  "rabi lenght 10": {
+    "acquisition": 0.07
+  },
+  "rabi lenght 100": {
+    "acquisition": 0.7
+  },
+  "rabi lenght 1000": {
+    "acquisition": 7.0
+  }
+}
