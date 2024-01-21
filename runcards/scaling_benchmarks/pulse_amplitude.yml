@@ -1,4 +1,4 @@
-platform: iqm5q
+platform: zurich
 
 qubits: [0]
 
@@ -50,4 +50,3 @@ actions:
     pulse_length: 40
     relaxation_time: 5000
     step_amp_factor: 0.001
-

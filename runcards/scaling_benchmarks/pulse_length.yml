@@ -1,4 +1,4 @@
-platform: iqm5q
+platform: zurich
 
 qubits: [0]
 
@@ -26,7 +26,7 @@ actions:
     pulse_duration_start: 20
     pulse_duration_step: 10
     relaxation_time: 5000
-  
+
 - id: rabi length 100
   priority: 0
   operation: rabi_length

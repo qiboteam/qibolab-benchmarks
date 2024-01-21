@@ -1,8 +1,6 @@
 import pathlib
 
-import networkx as nx
-import yaml
-from qibolab.channels import Channel, ChannelMap
+from qibolab.channels import Channel
 from qibolab.instruments.qblox.cluster import (
     Cluster,
     Cluster_Settings,
@@ -33,7 +31,7 @@ from qibolab.utils import load_qubits, load_runcard, load_settings
 NAME = "qblox"
 ADDRESS = "192.168.0.6"
 TIME_OF_FLIGHT = 500
-RUNCARD = pathlib.Path(__file__).parent / "qw5q_gold_qblox.yml"
+RUNCARD = pathlib.Path(__file__).parent / "qblox.yml"
 
 instruments_settings = {
     "cluster": Cluster_Settings(reference_clock_source=ReferenceClockSource.INTERNAL),
@@ -147,7 +145,7 @@ instruments_settings = {
 
 
 def create(runcard_path=RUNCARD):
-    """QuantWare 5q-chip controlled using qblox cluster.
+    """5q-chip controlled using qblox cluster.
 
     Args:
         runcard_path (str): Path to the runcard file.
@@ -262,6 +260,4 @@ def create(runcard_path=RUNCARD):
 
     instruments = {controller.name: controller, twpa_pump.name: twpa_pump}
     settings = load_settings(runcard)
-    return Platform(
-        "qw5q_gold_qblox", qubits, pairs, instruments, settings, resonator_type="2D"
-    )
+    return Platform("qblox", qubits, pairs, instruments, settings, resonator_type="2D")

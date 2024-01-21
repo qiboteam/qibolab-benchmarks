@@ -7,12 +7,13 @@ from qibolab.instruments.erasynth import ERA
 from qibolab.instruments.oscillator import LocalOscillator
 from qibolab.instruments.zhinst import Zurich
 
-RUNCARD = pathlib.Path(__file__).parent / "iqm5q.yml"
+RUNCARD = pathlib.Path(__file__).parent / "zurich.yml"
 
 TWPA_ADDRESS = "192.168.0.210"
 
+
 def create(runcard=RUNCARD):
-    """IQM 5q-chip controlled Zurich Instrumetns (Zh) SHFQC, HDAWGs and PQSC.
+    """5q-chip controlled Zurich Instrumetns (Zh) SHFQC, HDAWGs and PQSC.
 
     Args:
         runcard (str): Path to the runcard file.
@@ -66,7 +67,11 @@ def create(runcard=RUNCARD):
     }
 
     controller = Zurich(
-        "Zurich", descriptor, use_emulation=False, time_of_flight=75, smearing=50,
+        "Zurich",
+        descriptor,
+        use_emulation=False,
+        time_of_flight=75,
+        smearing=50,
     )
 
     # Create channel objects and map controllers
@@ -112,8 +117,7 @@ def create(runcard=RUNCARD):
     # drive
     for i in range(5, 10):
         channels[f"L4-1{i}"].power_range = -10
-    channels[f"L4-19"].power_range = 0   
-    
+    channels[f"L4-19"].power_range = 0
 
     # HDAWGS
     # Sets the output voltage range.
@@ -157,7 +161,7 @@ def create(runcard=RUNCARD):
         channels[ch].local_oscillator = local_oscillators[lo]
 
     instruments = [controller] + local_oscillators
-    platform = Platform("IQM5q", runcard, instruments, channels)
+    platform = Platform("zurich", runcard, instruments, channels)
     platform.resonator_type = "2D"
 
     # assign channels to qubits and sweetspots(operating points)

@@ -1,4 +1,4 @@
-platform: iqm5q
+platform: zurich
 
 qubits: [0]
 
@@ -35,4 +35,3 @@ actions:
     niter: 100
     nshots: 128
     seed: 420
-  

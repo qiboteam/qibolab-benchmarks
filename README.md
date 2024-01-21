@@ -14,16 +14,16 @@ Library | Version
 `qblox-instruments` | 0.9.0
 `qm-qua` | 1.1.1
 `laboneq` | 2.7.0
-`qick` | 0.2.135 
+`qick` | 0.2.135
 `qibosoq` | 0.0.3
 
 Different versions of these libraries may not support the platforms and runcards provided here.
 
 The `platforms` directory provides the platform runcards for the different instruments provided, particularly:
-* iqm5q for Zurich instruments,
+* zurich for Zurich instruments,
 * qm for Quantum Machines,
-* qw5q_gold_qblox for Qblox instruments,
-* tii1q_b1 for RFSoC 4x2 controlled using QICK.
+* qblox for Qblox instruments,
+* rfsoc for the RFSoC 4x2 controlled using QICK.
 
 The `runcards` directory provides the qibocal runcards for executing the calibration routines that were benchmarked.
 

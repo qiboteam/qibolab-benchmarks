@@ -1,5 +1,5 @@
 nqubits: 5
-description: QuantWare 5-qubit device at XLD fridge.
+description: 5-qubit device at XLD fridge.
 settings: {nshots: 4096, sampling_rate: 1000000000, relaxation_time: 300000}
 qubits: [0, 1, 2, 3, 4, 5]
 topology:

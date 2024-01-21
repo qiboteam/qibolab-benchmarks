@@ -1,4 +1,4 @@
-platform: iqm5q
+platform: zurich
 
 qubits: [0]
 
@@ -13,7 +13,7 @@ actions:
     delay_before_readout_step: 300
     nshots: 1000
     relaxation_time: 5000
-  
+
 - id: t1 10
   priority: 0
   main: t1 100
