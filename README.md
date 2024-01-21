@@ -25,6 +25,8 @@ The `platforms` directory provides the platform runcards for the different instr
 * qblox for Qblox instruments,
 * rfsoc for the RFSoC 4x2 controlled using QICK.
 
+Using these platforms in a self-hosted lab that has access to any of these instruments may require changing some of the setup parameters, such as instrument IP addresses.
+
 The `runcards` directory provides the qibocal runcards for executing the calibration routines that were benchmarked.
 
 Before executing any routines or programs, qibolab should be configured to read the platform runcards from the correct directory.
