@@ -2,6 +2,8 @@
 
 This repository contains the code required to reproduce the benchmarks presented in Section IV.A. of the [qibolab paper](https://arxiv.org/abs/2308.06313).
 
+## Required libraries
+
 Executing the benchmarks on instruments requires installing the [qibolab](https://qibo.science/qibolab/stable/getting-started/installation.html)
 and [qibocal](https://qibo.science/qibocal/stable/getting-started/installation.html) libraries, as well as instrument specific dependencies.
 
@@ -18,6 +20,8 @@ Library | Version
 `qibosoq` | 0.0.3
 
 Different versions of these libraries may not support the platforms and runcards provided here.
+
+## Setup
 
 The `platforms` directory provides the platform runcards for the different instruments provided, particularly:
 * zurich for Zurich instruments,
@@ -36,10 +40,21 @@ export QIBOLAB_PLATFORMS=./platforms
 ```
 If this is run from a different location than this README, the directory should be modified accordingly.
 
-Then  benchmarks can be executed using the `qq` command provided by qibocal, for example:
+## Execution
+
+Benchmarks can be executed using the `qq` command provided by qibocal, for example:
 ```sh
 qq auto runcards/routines_benchmarks.yml --no-update
 ```
 will execute the benchmarks presented in Fig. 6 of the paper.
 
 Note that running the benchmark on different instruments requires changing the `platform` key in the qibocal runcards to the corresponding platform name.
+
+## Data
+
+Succesful execution of the `qq` command will create a new folder in the current directory.
+Note that the name of this folder can be controlled with the `-o` option in `qq`.
+
+This folder contains the data acquired for each executed routine as well as a `meta.json` file
+with metadata related to the execution. Acquisition, fit and total runtimes for each executed
+routine can be found in `meta.json`.
