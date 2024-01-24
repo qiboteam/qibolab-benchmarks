@@ -1,0 +1,15 @@
+{
+  "date": "2023-07-19 09:52:14.358739",
+  "rabi amplitude 1": {
+    "acquisition": 0.007
+  },
+  "rabi amplitude 10": {
+    "acquisition": 0.07
+  },
+  "rabi amplitude 100": {
+    "acquisition": 0.7
+  },
+  "rabi amplitude 1000": {
+    "acquisition": 7.0
+  }
+}

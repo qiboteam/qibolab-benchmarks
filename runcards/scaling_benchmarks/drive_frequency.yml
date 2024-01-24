@@ -1,0 +1,51 @@
+platform: zurich
+
+qubits: [0]
+
+actions:
+- id: qubit spectroscopy 1
+  priority: 0
+  main: qubit spectroscopy 10
+  operation: qubit_spectroscopy
+  parameters:
+    drive_amplitude: 0.001
+    drive_duration: 5000
+    freq_step: 30000000
+    freq_width: 30000000
+    nshots: 1000
+    relaxation_time: 5000
+
+- id: qubit spectroscopy 10
+  priority: 0
+  main: qubit spectroscopy 100
+  operation: qubit_spectroscopy
+  parameters:
+    drive_amplitude: 0.001
+    drive_duration: 5000
+    freq_step: 3000000
+    freq_width: 30000000
+    nshots: 1000
+    relaxation_time: 5000
+
+- id: qubit spectroscopy 100
+  priority: 0
+  main: qubit spectroscopy 1000
+  operation: qubit_spectroscopy
+  parameters:
+    drive_amplitude: 0.001
+    drive_duration: 5000
+    freq_step: 300000
+    freq_width: 30000000
+    nshots: 1000
+    relaxation_time: 5000
+
+- id: qubit spectroscopy 1000
+  priority: 0
+  operation: qubit_spectroscopy
+  parameters:
+    drive_amplitude: 0.001
+    drive_duration: 5000
+    freq_step: 30000
+    freq_width: 30000000
+    nshots: 1000
+    relaxation_time: 5000

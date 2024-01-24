@@ -1,0 +1,23 @@
+{
+  "date": "2023-07-20 11:31:09.724204",
+  "resonator spectroscopy 1": {
+    "acquisition": 1.927659273147583,
+    "fit": 0.00766444206237793,
+    "tot": 1.936138391494751
+  },
+  "resonator spectroscopy 10": {
+    "acquisition": 1.2896876335144043,
+    "fit": 0.01020359992980957,
+    "tot": 1.30015230178833
+  },
+  "resonator spectroscopy 100": {
+    "acquisition": 1.2790400981903076,
+    "fit": 0.014308929443359375,
+    "tot": 1.2934906482696533
+  },
+  "resonator spectroscopy 1000": {
+    "acquisition": 9.324194431304932,
+    "fit": 0.014446735382080078,
+    "tot": 9.338757753372192
+  }
+}

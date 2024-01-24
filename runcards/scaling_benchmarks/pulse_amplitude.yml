@@ -1,0 +1,52 @@
+platform: zurich
+
+qubits: [0]
+
+actions:
+
+- id: rabi amplitude 1
+  priority: 0
+  main: rabi amplitude 10
+  operation: rabi_amplitude
+  parameters:
+    max_amp_factor: 1.1
+    min_amp_factor: 0
+    nshots: 1000
+    pulse_length: 40
+    relaxation_time: 5000
+    step_amp_factor: 1.0
+
+- id: rabi amplitude 10
+  priority: 0
+  main: rabi amplitude 100
+  operation: rabi_amplitude
+  parameters:
+    max_amp_factor: 1.0
+    min_amp_factor: 0.0
+    nshots: 1000
+    pulse_length: 40
+    relaxation_time: 5000
+    step_amp_factor: 0.1
+
+- id: rabi amplitude 100
+  priority: 0
+  main: rabi amplitude 1000
+  operation: rabi_amplitude
+  parameters:
+    max_amp_factor: 1.0
+    min_amp_factor: 0.0
+    nshots: 1000
+    pulse_length: 40
+    relaxation_time: 5000
+    step_amp_factor: 0.01
+
+- id: rabi amplitude 1000
+  priority: 0
+  operation: rabi_amplitude
+  parameters:
+    max_amp_factor: 1.0
+    min_amp_factor: 0.0
+    nshots: 1000
+    pulse_length: 40
+    relaxation_time: 5000
+    step_amp_factor: 0.001

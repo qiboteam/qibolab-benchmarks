@@ -1,0 +1,47 @@
+platform: zurich
+
+qubits: [0]
+
+actions:
+- id: t1 1
+  priority: 0
+  main: t1 10
+  operation: t1
+  parameters:
+    delay_before_readout_end: 300
+    delay_before_readout_start: 0
+    delay_before_readout_step: 300
+    nshots: 1000
+    relaxation_time: 5000
+
+- id: t1 10
+  priority: 0
+  main: t1 100
+  operation: t1
+  parameters:
+    delay_before_readout_end: 3000
+    delay_before_readout_start: 0
+    delay_before_readout_step: 300
+    nshots: 1000
+    relaxation_time: 5000
+
+- id: t1 100
+  priority: 0
+  main: t1 1000
+  operation: t1
+  parameters:
+    delay_before_readout_end: 30000
+    delay_before_readout_start: 0
+    delay_before_readout_step: 300
+    nshots: 1000
+    relaxation_time: 5000
+
+- id: t1 1000
+  priority: 0
+  operation: t1
+  parameters:
+    delay_before_readout_end: 30000
+    delay_before_readout_start: 0
+    delay_before_readout_step: 30
+    nshots: 1000
+    relaxation_time: 5000

@@ -1,0 +1,51 @@
+platform: zurich
+
+qubits: [0]
+
+actions:
+- id: resonator spectroscopy 1
+  priority: 0
+  main: resonator spectroscopy 10
+  operation: resonator_spectroscopy
+  parameters:
+    amplitude: 0.1
+    freq_step: 10000
+    freq_width: 10000
+    nshots: 1000
+    power_level: low
+    relaxation_time: 5000
+
+- id: resonator spectroscopy 10
+  priority: 0
+  main: resonator spectroscopy 100
+  operation: resonator_spectroscopy
+  parameters:
+    amplitude: 0.1
+    freq_step: 10000000
+    freq_width: 100000000
+    nshots: 1000
+    power_level: low
+    relaxation_time: 5000
+
+- id: resonator spectroscopy 100
+  priority: 0
+  main: resonator spectroscopy 1000
+  operation: resonator_spectroscopy
+  parameters:
+    amplitude: 0.1
+    freq_step: 1000000
+    freq_width: 100000000
+    nshots: 1000
+    power_level: low
+    relaxation_time: 5000
+
+- id: resonator spectroscopy 1000
+  priority: 0
+  operation: resonator_spectroscopy
+  parameters:
+    amplitude: 0.1
+    freq_step: 100000
+    freq_width: 100000000
+    nshots: 1000
+    power_level: low
+    relaxation_time: 5000
