@@ -11,10 +11,10 @@ The following versions were used to perform the benchmarks presented in the pape
 
 Library | Version
 -- | --
-`qibolab` | 0.1.0
-`qibocal` | 0.0.3
+`qibolab` | 0.1.6
+`qibocal` | 0.0.4
 `qblox-instruments` | 0.9.0
-`qm-qua` | 1.1.1
+`qm-qua` | 1.1.6
 `laboneq` | 2.7.0
 `qick` | 0.2.135
 `qibosoq` | 0.0.3
