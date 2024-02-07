@@ -2,6 +2,9 @@
 
 This repository contains the code required to reproduce the benchmarks presented in Section IV.A. of the [qibolab paper](https://arxiv.org/abs/2308.06313).
 
+Note that the main branch of this repository is being updated to newer versions of the Python libraries.
+For the versions used in the benchmark please check the [v0.1.0 tag](https://github.com/qiboteam/qibolab-benchmarks/tree/v0.1.0).
+
 ## Required libraries
 
 Executing the benchmarks on instruments requires installing the [qibolab](https://qibo.science/qibolab/stable/getting-started/installation.html)
