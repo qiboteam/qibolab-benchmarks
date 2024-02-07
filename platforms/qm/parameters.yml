@@ -7,6 +7,19 @@ settings:
 
 qubits: [0]
 
+instruments:
+    con3:
+        i1:
+            gain: 0
+        i2:
+            gain: 0
+    lo_readout:
+        frequency: 5_000_000_000
+        power: 0
+    lo_drive:
+        frequency: 3_900_000_000
+        power: 0
+
 native_gates:
     single_qubit:
         0: # qubit number

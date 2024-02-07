@@ -49,13 +49,14 @@ actions:
 
   - id: ramsey detuned
     priority: 40
-    operation: ramsey
+    operation: ramsey_signal
     main: t1
     parameters:
       delay_between_pulses_start: 0
       delay_between_pulses_end: 30_000
       delay_between_pulses_step: 1_000
       n_osc: 10
+      unrolling: False
 
   - id: t1
     priority: 50
