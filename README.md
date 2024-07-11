@@ -18,7 +18,7 @@ Library | Version
 `qibocal` | 0.0.4
 `qblox-instruments` | 0.9.0
 `qm-qua` | 1.1.6
-`laboneq` | 2.7.0
+`laboneq` | 2.25.0
 `qick` | 0.2.135
 `qibosoq` | 0.0.3
 
